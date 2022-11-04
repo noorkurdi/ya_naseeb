@@ -23,9 +23,15 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        return ios;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for ios - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -58,25 +64,5 @@ class DefaultFirebaseOptions {
     messagingSenderId: '594632936898',
     projectId: 'yanaseeb-2d773',
     storageBucket: 'yanaseeb-2d773.appspot.com',
-  );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDxLVmG2fRSOAEBFqqy0QcQ1KIDgJJppR4',
-    appId: '1:594632936898:ios:01c512464cd5dfc139da5b',
-    messagingSenderId: '594632936898',
-    projectId: 'yanaseeb-2d773',
-    storageBucket: 'yanaseeb-2d773.appspot.com',
-    iosClientId: '594632936898-osro46u8gar2sf7d35dam8biaes2k522.apps.googleusercontent.com',
-    iosBundleId: 'com.example.yaNaseeb',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDxLVmG2fRSOAEBFqqy0QcQ1KIDgJJppR4',
-    appId: '1:594632936898:ios:01c512464cd5dfc139da5b',
-    messagingSenderId: '594632936898',
-    projectId: 'yanaseeb-2d773',
-    storageBucket: 'yanaseeb-2d773.appspot.com',
-    iosClientId: '594632936898-osro46u8gar2sf7d35dam8biaes2k522.apps.googleusercontent.com',
-    iosBundleId: 'com.example.yaNaseeb',
   );
 }

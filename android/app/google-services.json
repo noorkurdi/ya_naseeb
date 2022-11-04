@@ -29,6 +29,13 @@
             {
               "client_id": "594632936898-62eiaacm6ek8ihab3rgqkavcafk27jtl.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "594632936898-osro46u8gar2sf7d35dam8biaes2k522.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.yaNaseeb"
+              }
             }
           ]
         }
